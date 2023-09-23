@@ -1,0 +1,25 @@
+@media screen and (max-width: 600px) {
+  .body-container{
+    width: 100%;
+  }
+  .top-section{
+    height: 13rem;
+    width: 100%;
+   text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  .browse-catergory-container{
+    display: none;
+  }
+  .sections{
+    display: flex;
+  }
+  .phone-section{
+  }
+  .phone-fig{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
