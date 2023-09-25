@@ -13,93 +13,180 @@ a{
 ul{
   list-style:none;
 }
-h2{
-  font-size: 25px;
+h3, h2{
+  color: #ffc000;
 }
+label, button{
+  cursor: pointer;
+}
+
 img{
-  height: 100%;
   width: 100%;
 }
 .body-container{
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
 }
-
+.top-section h2{
+  font-size: 25px;
+  height: 10%;
+}
 .top-section{
-  background-color: white;
-  height: 12rem;
+  background-color:#FFFF;
+  height: 13rem;
   width: 95%;
  text-align: center;
-  margin:0 auto 2rem;
-  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
+  padding:0.5rem 0 0;
+  margin:0 auto 1rem;
 }
 .phone-slide{
-  padding: 0 0 1rem;
-  height: 90%;
+  height: 80%;
+  padding: 1rem;
   display: flex;
+  justify-content: space-around;
 }
 .phone-slide-section{
-  height: 90%;
-  width: 13rem;
+  width: 10rem;
+  height: fit-content;
 }
-.phone-slide-section img{
-  padding: 1rem ;
+
+.phone-slide-section-img{
+  width: 90%;
+  height:7.5rem;
+  padding: 0.5rem 0;
+}
+.phone-slide-section figcaption{
+  font-size: 15px;
+}
+.phone-slide-section:hover{
+  border-radius: 5px;
+  cursor:pointer;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
 }
 .arrow-right h3{
- margin-top: 1.5rem;
+  padding-top: 1rem;
 }
 .arrow-right{
-  height: 90%;
-  width: 13rem;
+  width: 10rem;
   padding: 25px 0 0;
 }
-
+.arrow-right:hover{
+  border-radius: 5px;
+  cursor:pointer;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2); 
+}
 .fa-solid{
 font-size: 4rem;
-color: whitesmoke;
+color: #800080;
 }
 .sections{
-  display: flex;
+  display: grid;
   width: 95%;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 2rem;
+  justify-content: space-between;
   margin: 0 auto 2rem;
-  /* background-color: #000; */
 }
+
+
+
 /* first section */
 .phone-section{
-  width: 75%;
+  background-color: white;
+  padding: 1rem;
 }
-
-.phone-section-container{
-  height: 15rem;
-  width:98% ;
-  margin:0 auto 3rem 0;
-  display: grid;
+.phone-fig figure{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.phone-fig figure figcaption{
+  padding: 0.5rem 0 0;
+  line-height: 1rem;
+  font-size: 12px;
+}
+.phone-fig figure figcaption strong{
+  line-height: 2rem;
+  font-size: 15px;
+}
+.phone-fig{
+  padding-top: 1rem;
+  display: grid; 
   grid-template-columns: repeat(4,1fr);
 }
-
-.image-container{
-  height: 15rem;
+.add-to-cart-button{
+  opacity: 0;
+  padding: 13px 10px;
+  background-color: #800080;
+  border-radius: 10px;
+  border: none;
 }
+.phone-fig figure:hover {
+  border-radius: 5px;
+  cursor:pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.phone-fig figure:hover .add-to-cart-button{
+  opacity: 1;
+  cursor:pointer;
+}
+
+.chose-variety{
+  display:flex;
+  justify-content: space-between;
+}
+.chose-variety h3{
+  font-size:20px;
+}
+
+.chose-variety-menu-text a {
+  font-size: 17px;
+  color: #ffc000;
+  padding: 1rem;
+}
+
+.chose-variety-menu-items{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.chose-variety-menu:hover{
+  background-color:#ffff;
+}
+.chose-variety-menu:hover .chose-variety-menu-items{
+  display: block;
+  background-color:#ffff;
+}
+.chose-variety-menu-items li{
+  margin: 0.5rem  0;
+}
+
 
 /* second section */
 .browse-catergory-container{
-  width:25%;
+  height: max-content;
+  background-color: white;
 }
 .browse-category a{
   font-size: 15px;
-  line-height: 1.5rem;
+  line-height: 2rem;
+}
+.browse-category a:hover{
+ color: #800080;
 }
 .category-section{
   width: 90%;
+  margin: auto;
   padding: 1.5rem;
   border-radius: 5px;
-  background-color: white;
 }
 .browse-category{
   border: 1px solid black;
- 
-  height: 20rem;
   display: flex;
   flex-direction: column;
   padding:1rem 1rem;
@@ -108,7 +195,7 @@ color: whitesmoke;
 
 .price-list label{
   font-size: 15px;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 .price-range-container{
   display: flex;
@@ -116,13 +203,21 @@ color: whitesmoke;
 }
 .price-range input{
   margin-top: 1rem;
-  padding: 8px 0;
-  width: 4rem;
+  padding: 6px 0;
+  width: 5rem;
 }
 .price-range button{
   width: 8rem;
   height: 2rem;
-  margin: 0.7rem 0 0 2.5rem ;
+  margin: 1rem 0 0 2.5rem ;
+  background-color: #800080;
+  border: none;
+  border-radius: 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+.price-range button:hover{
+  color: #800080;
+  background-color: #ffc000;
 }
 #search{
   padding: 0.45rem 0;
@@ -140,7 +235,7 @@ color: whitesmoke;
 
 .brand-category{
   border: 1px solid black;
-  border-radius: 2%;
+  border-radius: 5px;
   height: 45rem;
   display: flex;
   flex-direction: column;
@@ -149,7 +244,7 @@ color: whitesmoke;
 }
 .rating-category{
   border: 1px solid black;
-  border-radius: 3%;
+  border-radius: 5px;
   height: 13rem;
   display: flex;
   flex-direction: column;
@@ -160,4 +255,11 @@ color: whitesmoke;
   font-size: 16px;
   line-height: 2rem;
   padding-left:5px;
+}
+.phone-16 i{
+  font-size: 17px;
+  color: #ffc000;
+}
+.fa-regular.fa-star{
+  color: rgba(0, 0, 0, 0.1);;
 }
