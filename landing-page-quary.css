@@ -1,3 +1,4 @@
+
 @media (max-width:1080px){
   .body-width{
     margin: auto;
@@ -5,23 +6,11 @@
    }
    .top-sales{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
    }
-   .top-sales :nth-child(5){
+   .top-sales :nth-child(6){
     display: none;
    }
-   .phone-fig{
-    padding-top: 1rem;
-    display: grid; 
-    grid-template-columns: repeat(3,1fr);
-  }
- .phone-fig:nth-child(4){
-    display:none;
-  }
-  .price-list label{
-    font-size: 12px;
-    line-height: 1.3rem;
-  }
 }
 @media (max-width:860px){
   .body-width{
@@ -40,28 +29,35 @@
   }
    .top-sales{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
    }
-   .top-sales :nth-child(4){
+   .top-sales :nth-child(5){
     display: none;
    }
    .phone-fig{
     padding-top: 1rem;
     display: grid; 
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
   }
-  .phone-fig figure img {
-    height: 9rem;
+ .phone-fig:nth-child(4){
+    display:none;
   }
   .browse-category a{
-    font-size: 13px;
+    font-size: 9px;
     line-height: 2rem;
   }
   .price-list  input{
     font-size: 9px;
     margin: 0 1px;
   }
-
+  .price-list label{
+    font-size: 8px;
+    line-height: 1.7rem;
+  }
+  .price-list label{
+    font-size: 8px;
+    line-height: 1.7rem;
+  }
   .price-range input{
     height: 1.5rem;
   }
@@ -76,12 +72,28 @@
   #search{
     font-size: 12px;
   }
-  .top-sales img{
-    height: 10rem;
-  }
 }
 
 
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menu-btn {
+    display:block ;
+  }
+
+  .nav-content {
+    display: none;
+  }
+  .menu-btn:hover + .nav-content,
+  .nav-content:hover {
+    display: flex;
+  }
+}
 @media screen and (max-width: 700px) {
   .body-width{
     max-width:  600px;
@@ -93,15 +105,17 @@
    .top-sales :nth-child(4){
     display: none;
    }
-   
+   .top-sales img{
+    height: 9rem;
+  }
   .phone-fig figure img{
     height:5rem;
   }
   .phone-fig figure figcaption{
-    font-size:11px
+    font-size:7px
   }
   .phone-fig figure figcaption strong{
-    font-size: 13px;
+    font-size: 9px;
   }
   .add-to-cart-button{
     height: 1.8rem;
@@ -120,12 +134,9 @@
     color: #ffc000;
     padding: 1rem;
   }
-  .phone-fig figure img{
-    height:7rem;
-  }
 }
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 500px){
   .phone-section{
     width: 100%;
   }
@@ -144,19 +155,12 @@
     height: 7rem;
   }
   .phone-fig figure img{
-    height:9rem;
+    height:6rem;
   }
 
 }
 
 @media screen and (max-width: 418px){
-  .top-sales{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-   }
-   .top-sales :nth-child(3){
-    display: none;
-   }
   .phone-fig figure figcaption{
     line-height: normal;
   }
@@ -164,10 +168,10 @@
     line-height: 15px;
   }
   .top-sales img{
-    height: 8rem;
+    height: 5rem;
   }
   .phone-fig figure img{
-    height:7rem;
+    height:4rem;
   }
   .add-to-cart-button strong{
     font-size: 7px;
@@ -176,81 +180,5 @@
   }
   .add-to-cart-button{
     height: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 399px){
-  .phone-fig figure figcaption{
-    font-size: 11px;
-  }
-  .phone-fig figure figcaption strong{
-    line-height: 1.8rem;
-  }
-  .phone-fig figure img{
-    height:7rem;
-  }
-  .add-to-cart-button strong{
-    font-size: 9px;
-  }
-  .add-to-cart-button{
-    height: 1.8rem;
-  }
-  .top-sales figcaption {
-    font-size: 11px;
-  }
-  .top-sales img{
-    height: 7rem;
-  }
-  .grid-header h5 a{
-    font-size: 13px;
-  }
-}
-
-
-@media screen and (max-width: 300px){
-
-  .top-sales img{
-    height: 5rem;
-  }
-  .top-sales figcaption {
-    line-height: 13px;
-  }
-  .top-sales figcaption strong {
-    line-height: 20px;
-  }
-  .phone-fig{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .phone-fig:nth-child(2){
-    display: none;
-  }
-  .phone-fig figure img{
-    height:10rem;
-  }
-  .chose-variety-menu{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 210px){
-  .top-sales{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-   }
-   .top-sales :nth-child(3){
-    display: none;
-   }
-
-  .top-sales img{
-    height: 4rem;
-  }
-  .top-sales figcaption {
-    font-size: 9px;
-  }
- 
-  .phone-fig figure img{
-    height:8rem;
   }
 }

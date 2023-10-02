@@ -5,9 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AlfreDebiTech</title>
     <link rel="stylesheet" href="landing-page.css" />
-    <link rel="stylesheet" href="landing-page-quary.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="landing-page-quary.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
   <body>
+  
+    <div class="top-navbar">
+      <p>WELCOME TO OUR SHOP</p>
+      <div>
+          <a href="login.html"> Login</a>
+          <a href="Register.html">Register</a> 
+      </div>
+     </div>
+  <!-- header-section -->
+  <div class="navbar">
+      <div class="logo">
+           <div>
+            <span class="alt-color">S</span><span>HOP</span><span class="alt-color">X</span>
+          </div>
+           <div  class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </div>
+      <div class="nav-content">
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                  <a href="#">Categories</a>
+                  <ul class="dropdown-content">
+                      <a href="#">iPhone</a>
+                      <a href="#">Androids</a> 
+                      <a href="#">Airpods</a>
+                      <a href="#">Chargers</a>
+                      <a href="#">Power Banks</a>
+                      <a href="#">Phone Pouch</a>
+                  </ul>
+              </li>
+              <li><a class="products" href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="search-bar">
+              <input type="text" placeholder="Search for products...">
+              <button type="submit">Search</button>
+          </div>
+          <div class="nav-content1">
+              <div class="cart">
+                  <a href="index.html"><i class='bx bxs-cart-alt'></i></a>
+              </div>
+              <div class="user-profile">
+                  <a href="index.html"><i class='bx bxs-user'></i></a>
+                  <a href="index.html">My account</a>
+              </div>
+              <div class="help">
+                  <a href="index.html"><i class='bx bxs-help-circle'></i></a>
+                  <a href="index.html">Help</a>
+              </div>
+          </div>    
+      </div>
+  </div>
+
+
     <div class="body-container">
       <div class="body-width">
 
@@ -543,6 +606,56 @@
         </div>
        </section>
       </div>
-     <script src="https://kit.fontawesome.com/540d675357.js" crossorigin="anonymous"></script>
+
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                      <span class="alt-color">S</span><span>HOP</span><span class="alt-color">X</span>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Featured Products</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Subscribe to Newsletter</h3>
+                    <p>Get updates on new products and promotions.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Shop X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
+<script src="https://kit.fontawesome.com/540d675357.js" crossorigin="anonymous"></script>
