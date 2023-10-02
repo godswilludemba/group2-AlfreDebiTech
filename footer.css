@@ -1,0 +1,130 @@
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;}
+    
+    
+        
+    
+        .header{
+            
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background-color:  rgb(40, 40, 40); 
+    color: white;
+        }
+    
+    
+       
+    
+        .phone-support-img> img{
+          width: 20px;
+          border: 4px solid white;
+          border-radius: 50px;
+         margin: 10px;
+        }
+        .detail-div{
+          display: flex;
+        }
+    
+        .sub-support-img> input{
+          color: #800080 ;
+          font-weight: bold;
+          padding: 6px;
+          border: none;
+          transform: skew(-10deg);
+        }
+        .subscribe h4{
+          background-color: #800080;
+          padding: 5px;
+          border: none;
+          transform: skew(-10deg);
+        }
+       
+     
+    
+      
+        
+    
+    
+    .aboutus2 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    }
+    
+    
+    .aboutus2 h5{
+     
+      color: black;
+      background-color:#ffc000;
+      border-radius: 5px;
+     
+      
+      }
+    
+    .aboutus2 a:hover{
+      background-color: #800080;
+      color: #ffc000;
+      border-radius: 5px;
+    }
+    
+    .container-2{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      padding: 10px;
+      background-color: black;
+      gap: 5px;
+      
+    }
+    
+    .downlaod-img{
+      display: flex;
+      padding: 10px;
+      gap: 20px;
+    
+    }
+    .downlaod-img> img{
+      width: 70px;
+      border: 1px solid #800080;
+      border-radius: 10px;
+    }
+     h4{
+      color: white;
+    }
+    .our-handle a img{
+    width: 20px;
+    border-radius: 50px;
+    }
+    .our-handle{
+      display: flex;
+      gap: 20px;
+      padding: 10px;
+    }
+   
+    .copyright {
+      background-color: black;
+     
+    }
+    .copyright p{
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 3px;
+     
+      
+    }
+    .copyright> p span{
+      color: #800080;
+    }
+
+
+
+    /* logo-section */
+    .phone-support-img> h2 span{
+      color: #ffc000;
+    }
+       

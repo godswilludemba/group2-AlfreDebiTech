@@ -7,14 +7,19 @@ It contains various main components, each providing a distinct job to deliver a
 seamless and productive user experience. Here's an outline and brief description of the
 plan for each section:
 Header Section
+
 ● Logo: Include the website's logo for brand recognition.
+
 ● Navigation Menu: Create a user-friendly menu with categories like "Phone
 Cases," "Screen Protectors," "Chargers," etc.
+
 ● Search Bar: Allow users to search for specific products.
 ● User Account: Provide access to user accounts for tracking orders and
 managing personal information.
+
 ● Shopping Cart: Display the number of items in the cart and a link to view the
 cart contents.
+
 Homepage
 ● Hero Section: Showcase popular or featured products with high-quality images
 and compelling headlines.
@@ -29,6 +34,7 @@ Product Listings
 ● Filters: Allow users to filter products by category, price range, brand, and rating.
 ● Pagination: If you have a large product catalog, implement pagination for easy
 navigation.
+
 Product Detail Pages
 ● Product Images: Show multiple images of the product from different angles.
 ● Product Description: Provide detailed information about the product, including
@@ -37,12 +43,14 @@ features, compatibility, and specifications.
 ● Add to Cart: Allow users to add the product to their shopping cart.
 ● Related Products: Suggest related or complementary items.
 ● Product Reviews: Show user reviews and ratings.
+
 Shopping Cart
 List of Items: Display a summary of items in the cart with images, names, quantities,
 and prices.
 Update Cart: Allow users to modify quantities or remove items.
 Proceed to Checkout: Provide a clear call to action to move to the checkout process.
 Continue Shopping: Include an option to return to product listings.
+
 Checkout
 ● Billing and Shipping Information: Collect necessary details for delivery.
 ● Payment Options: Offer various payment methods, such as credit card, PayPal,
@@ -51,6 +59,7 @@ and others.
 ● Promo Code: Allow users to apply promo codes for discounts.
 ● Confirmation: Provide an order confirmation page with a thank-you message
 and order details.
+
 Footer
 ● Contact Information: Include contact details and a contact form.
 ● Links: Add links to important pages like FAQs, About Us, Privacy Policy, and
@@ -58,16 +67,20 @@ Returns.
 ● Newsletter Signup: Allow users to subscribe to newsletters for updates and
 promotions.
 ● Social Media Links: Include icons linking to your social media profiles.
+
 About Us Page
 ● Company Story: Share the history and mission of your company.
 ● Team: Introduce the team members or key personnel.
 ● Values: Highlight your commitment to quality and customer satisfaction.
+
 Contact Us Page
 ● Contact Form: Provide a form for users to send inquiries.
 ● Map: Embed a map for physical store locations (if applicable).
 ● Customer Support: Share contact details for customer support.
+
 FAQ Section
 ● Common Questions: Address frequently asked questions to assist users.
+
 Account Management (User Dashboard)
 ● User Profile: Allow users to update personal information.
 ● Order History: Display order details and tracking information.
