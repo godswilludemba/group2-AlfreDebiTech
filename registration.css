@@ -6,71 +6,75 @@
 .container{
    
    
-    display: flex;
+     display: flex;
  justify-content: center;
- align-items:  center;
+ align-content:  center; 
 
  padding-top: 120px;
    
     
 }
 
-/* 
-.header{
-    
-    align-items:  center;   
-} */
 
-form> h2> span{
+
+.header h2> span{
     color: #ffc000;
 }
  
 
 
 .Email{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .Email input{
     padding: 10px;
     border-radius: 10px;
-    background-color: aquamarine;
-    width: 100%;
+  
+    border: 3px solid #800080;
+    width: 260px;
+   outline: none;
 }
 
 
 
 .User-nmae{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .User-nmae input{
     padding: 10px;
     border-radius: 10px;
-    background-color: aquamarine;
-    width: 100%;
+    border: 3px solid #800080;;
+   
+    width: 260px;
+    outline: none;
 }
 
 
 
-.Password{padding-top: 20px;
+.Password{padding-top: 10px;
 }
 .Password input{
     padding: 10px;
     border-radius: 10px;
-    background-color: aquamarine;
-    width: 100%;
+   
+    border: 3px solid #800080;
+    width: 260px;
+    outline: none;
 }
 
 .submit{
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 .submit button{
     padding: 5px;
     border-radius: 5px;
-    background-color: aquamarine;
-    border: none;
+    background-color: #ffc000;
+   
+    border: 2px solid #800080;
     cursor: pointer;
-    width: 100%;
+    width: 260px;
+    font-weight: bold;
 }
 
 
