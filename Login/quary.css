@@ -1,0 +1,49 @@
+@media screen and (max-width: 600px) {
+  .login-container {
+    width: 80%;
+  }
+
+  .login-form {
+    padding: 20px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .input-group label {
+    font-size: 14px;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+}
+/* @media screen and (max-width: 368px) {
+  .login-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .login-form {
+    padding: 15px;
+  }
+
+  .input-group {
+    gap: 10px;
+  }
+
+  .input-group label {
+    font-size: 12px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+  }
+
+} */

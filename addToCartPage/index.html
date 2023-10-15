@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="added-to-cart-message">
+      <p id="product-name">Item added to cart!</p>
+      <img id="product-image" src="" alt="Product Image">
+      <p id="product-price"></p>
+  </div>
+
+  <script>
+                const selectedProduct = JSON.parse(localStorage.getItem('selectedProduct'));
+        
+        if (selectedProduct) {
+            document.getElementById('product-name').innerText = selectedProduct.name;
+            document.getElementById('product-image').src = selectedProduct.image;
+            document.getElementById('product-price').innerText = 'Price: ₦ ' + selectedProduct.price.toFixed(2);
+        }
+
+        function resetCart() {
+            itemCount = 0;
+            updateCartCount();
+            localStorage.removeItem('selectedProduct');
+        }
+
+  </script>
+</body>
+</html>
+
+

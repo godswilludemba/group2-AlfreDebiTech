@@ -117,19 +117,47 @@
     top: 60px;
     right: 0;
   }
-
   .nav-content1 div {
     margin: 10px 0;
   }
-
   .menu-btn:hover + .nav-content,
   .nav-content:hover {
     display: flex;
   }
 }
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-content {
+    width: 100%;
+    display: none;
+  }
+  .nav-content.show {
+    display: flex;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn {
+    display: block;
+  } 
 
-@media screen and (max-width: 768px) {
-  
+   .nav-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #800080;
+  }
+
+   .nav-content ul li {
+    display: block;
+    margin-right: 0;
+  } 
+
+  .nav-content ul li a:hover {
+    color: #ffc000;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -175,30 +203,37 @@
   }
 }
 
-@media screen and (max-width: 520px){
-  .phone-section{
-    width: 100%;
+@media screen and (max-width: 520px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
- 
-  .grid-header{
-    font-size: 15px;
-    height: 2.5rem;
+
+  .logo {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
-  .grid-header a{
-    font-size: 15px;
+
+  .menu-btn {
+    display: block;
   }
-  .browse-catergory-container{
+
+  .nav-content {
     display: none;
-  }
-  .top-sales img{
-    height: 7rem;
-  }
-  .phone-fig figure img{
-    height:9rem;
+    position: absolute;
+    width: 100%;
+    background-color: #800080;
   }
 
+  .nav-content ul li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .nav-content ul li a:hover {
+    color: #ffc000;
+  }
 }
-
 @media screen and (max-width: 418px){
   .top-sales{
     display: grid;
@@ -255,8 +290,6 @@
     font-size: 13px;
   }
 }
-
-
 @media screen and (max-width: 300px){
 
   .top-sales img{
@@ -282,7 +315,6 @@
     display: none;
   }
 }
-
 @media screen and (max-width: 210px){
   .top-sales{
     display: grid;
@@ -292,14 +324,12 @@
    .top-sales :nth-child(3){
     display: none;
    }
-
   .top-sales img{
     height: 4rem;
   }
   .top-sales figcaption {
     font-size: 9px;
   }
- 
   .phone-fig figure img{
     height:8rem;
   }

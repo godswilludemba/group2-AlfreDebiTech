@@ -1,0 +1,145 @@
+
+@media screen and (max-width: 1024px) {
+  .categories {
+    flex-direction: column;
+  }
+
+  .category {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    gap: 10px;
+  }
+  .footer-content{
+    width: 80%;
+    margin: auto;
+  }
+ #Subscribe{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column; 
+   width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .search-bar input {
+    width: 50%;
+  }
+
+  .search-bar button {
+    width: 30%;
+  }
+ 
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .search-bar input {
+    width: 70%;
+  }
+
+  .search-bar button {
+    width: 20%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 15px;
+  }
+  .newsletter-form{
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search-bar{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+ .search-bar button{
+  border-radius: 10px;
+  font-size: 10px;
+  height: 33px;
+ }
+ .search-bar input{
+  border-radius: 10px;
+ }
+ .search-bar input::placeholder{
+  font-size: 10px;
+ }
+ .newsletter-form input::placeholder{
+  font-size: 10px;
+ }
+ .newsletter-form input{
+  width: 60%;
+ }
+ .newsletter-form button{
+  width: 30%;
+  font-size: 10px;
+  height: 35px;
+ }
+}
+
+@media screen and (max-width: 250px) {
+  .search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar button {
+    border-radius: 10px;
+    font-size: 10px;
+    height: 33px;
+  }
+
+  .search-bar input {
+    border-radius: 10px;
+  }
+
+  .search-bar input::placeholder {
+    font-size: 10px; 
+  }
+
+  #Subscribe input::placeholder,
+  #Subscribe input {
+    font-size: 10px; 
+    width: 60%;
+  }
+
+  #Subscribe button {
+    width: 30%;
+    font-size: 10px;
+    height: 35px;
+  }
+
+  .footer-links a,
+  .footer-section a{
+    font-size: 10px;
+  }
+  .footer-section h3{
+    font-size: 15px;
+  }
+  .category h2{
+    font-size: small;
+  }
+}
