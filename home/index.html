@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </head>
   <body>
-
     <div class="top-navbar">
         <p>WELCOME TO OUR SHOP</p>
         <div>
@@ -25,13 +24,11 @@
     <div class="navbar">
         <div class="logo">
              <div>
-              <span class="alt-color">S</span><span>HOP</span><span class="alt-color">X</span>
+              <a href="#"><span class="alt-color">S</span><span>HOP</span><span class="alt-color">X</span></a>
              </div>
-             <div  class="menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+             <div  class="menu-btn" onclick="toggleMenu()">
+              &#9776;
+             </div>
         </div>
         <div class="nav-content">
             <ul>
@@ -56,8 +53,12 @@
             </div>
             <div class="nav-content1">
                 <div class="cart">
-                    <a href="index.html"><i class='bx bxs-cart-alt' style='color:#ffffff' ></i></i></a>
+                    <a href="../addToCartPage/index.html">
+                      <span id="cart-number">0</span>
+                      <i class='bx bxs-cart-alt' style='color:#ffffff' ></i>
+                    </a>
                 </div>
+                <button  onclick="resetCart()">Reset Cart</button>
                 <div class="user-profile">
                     <a href="index.html"><i class='bx bxs-user' style='color:#ffffff'></i></a>
                     <a href="index.html">My account</a>
@@ -69,6 +70,7 @@
             </div>    
         </div>
     </div>
+    <!-- main-body -->
     <div class="body-container">
         <div class="body-width">
   
@@ -125,7 +127,6 @@
             </figure>
             </div>
           </section>
-  
     <!-- Limited-Stock -->
           <section class="grid-phone-deals">
             <div id="LS" class="grid-header">
@@ -175,10 +176,8 @@
               </figure>
             </div>
           </section>
-  
           <!-- Phone-Accesories -->
-  
-          <section class="grid-phone-deals">
+            <section class="grid-phone-deals">
             <div class="grid-header">
               <h5>Phone-Accesories</h5>
             </div>
@@ -226,8 +225,7 @@
               </figure>
             </div>
           </section>
-  
-          <!-- Extra-Discounts -->
+            <!-- Extra-Discounts -->
           <section class="grid-phone-deals">
             <div class="grid-header">
               <h5>Extra-Discounts</h5>
@@ -276,8 +274,6 @@
               </figure>
             </div>
           </section>
-  
-  
       <section class="sections">
            <!-- first section -->
            <div class="phone-section">
@@ -298,150 +294,146 @@
             <hr>
               <div class="phone-fig">
                 <!-- 1 - 4 -->
-                <figure>
+                <figure id="add-to-cart-page">
                 <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 131,500</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button onclick="addToCart()" class="add-to-cart-button">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 215,000</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button class="add-to-cart-button" onclick="addToCart()">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 131,500</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button onclick="addToCart()" class="add-to-cart-button">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 215,000</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button class="add-to-cart-button" onclick="addToCart()">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-    
               <!-- 2 - 4 -->
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 131,500</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button onclick="addToCart()" class="add-to-cart-button">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 215,000</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button class="add-to-cart-button" onclick="addToCart()">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 131,500</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button onclick="addToCart()" class="add-to-cart-button">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 215,000</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button class="add-to-cart-button" onclick="addToCart()">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-    
               <!-- 3 - 4 -->
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 131,500</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button onclick="addToCart()" class="add-to-cart-button">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 215,000</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button class="add-to-cart-button" onclick="addToCart()">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 131,500</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button onclick="addToCart()" class="add-to-cart-button">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
-              <figure>
+              <figure id="add-to-cart-page">
                 <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
                   <strong>₦ 215,000</strong>
                 </figcaption>
-                <button class="add-to-cart-button">
+                <button class="add-to-cart-button" onclick="addToCart()">
                   <strong>ADD TO CART</strong>
                 </button>
               </figure>
             </div>
             </div>
-    
           <!-- Second section -->
           <div class="browse-catergory-container">
             <div class="category-section">
-    
-              <!-- phone category -->
+                  <!-- phone category -->
               <section class="browse-category">
                 <h2>Browse categories</h2><br>
                 <a href="#">Mobile Phone</a>
@@ -451,7 +443,6 @@
                 <a href="#">Gaming</a>
                 <a href="#">Gaming Accessories</a>
               </section>
-    
               <!-- price section -->
               <section class="browse-category">
                 <h2>Price</h2><br>
@@ -486,7 +477,6 @@
                   <button>GO</button>
                 </form>
               </section>
-    
               <!-- brand section -->
               <section class="browse-category">
                 <h2>Brand</h2><br>
@@ -561,8 +551,6 @@
                 </div><br>
                 </form>
               </section>
-    
-    
               <section class="browse-category">
                 <h2>Rating</h2><br>
                 <form>
@@ -613,11 +601,11 @@
                 </div>
                 <div class="footer-links">
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="aboutUs/index.html">About Us</a></li>
+                        <li><a href="terms&condition/index.html">Terms & Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="/group2-AlfreDebiTech/helpCenter/index.html">Help Center</a></li>
+                        <li><a href="/group2-AlfreDebiTech/aboutUs/index.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -656,3 +644,4 @@
   </body>
 </html>
 <script src="https://kit.fontawesome.com/540d675357.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
