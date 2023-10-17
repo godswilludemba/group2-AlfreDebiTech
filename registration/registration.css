@@ -1,78 +1,44 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container{
-   
-   
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .registration-section {
+    padding: 20px;
+  }
+  
+  form {
     display: flex;
- justify-content: center;
- align-items:  center;
-
- padding-top: 120px;
-   
-    
-}
-
-/* 
-.header{
-    
-    align-items:  center;   
-} */
-
-form> h2> span{
-    color: #ffc000;
-}
- 
-
-
-.Email{
-    padding-top: 50px;
-}
-.Email input{
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  button {
     padding: 10px;
-    border-radius: 10px;
-    background-color: aquamarine;
-    width: 100%;
-}
-
-
-
-.User-nmae{
-    padding-top: 20px;
-}
-.User-nmae input{
-    padding: 10px;
-    border-radius: 10px;
-    background-color: aquamarine;
-    width: 100%;
-}
-
-
-
-.Password{padding-top: 20px;
-}
-.Password input{
-    padding: 10px;
-    border-radius: 10px;
-    background-color: aquamarine;
-    width: 100%;
-}
-
-.submit{
-    padding-top: 30px;
-}
-
-.submit button{
-    padding: 5px;
-    border-radius: 5px;
-    background-color: aquamarine;
+    background-color: #800080;
+    color: #fff;
     border: none;
     cursor: pointer;
-    width: 100%;
-}
-
-
-
-    
+  }
+  
+  button:hover {
+    background-color: #ffcc00;
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  }
