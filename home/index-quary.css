@@ -82,38 +82,6 @@
   }
 
 
-  .menu-btn {
-    display: flex;
-  }
-  
-
-  .nav-content {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    background-color: #800080;
-    right: 0;
-    width: 100%;
-    padding-bottom: 10px;
-    gap: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-content.active {
-    display: flex;
-  }
-
-  ul {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
   .footer-content{
     width: 80%;
     margin: auto;
@@ -165,7 +133,7 @@
   }
 }
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 590px){
   .phone-section{
     width: 100%;
   }
@@ -325,3 +293,52 @@
   }
 }
 
+
+
+
+
+
+
+@media only screen and (max-width:1114px){
+  .alt-color{
+      font-size: 30px;
+  }
+  span{
+      font-size: 30px;
+  }
+  .icons a {
+      margin-right: 19px; 
+  }
+  
+}
+@media only screen and (max-width:600px){
+  .alt-color{
+      font-size: 20px;
+  }
+  span{
+      font-size: 20px;
+  }
+  .search{
+      width: 6rem;
+  }
+  .icons a {
+      margin-right: 20px; 
+  }
+  
+  .icons .fa{
+    font-size: 10px;
+  }
+  #cart-number{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width:400px){
+
+  .icons a {
+    margin-right:7px; 
+}
+.icons i {
+  margin-right:7px; 
+}
+ 
+}
