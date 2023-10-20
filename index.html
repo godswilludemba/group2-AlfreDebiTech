@@ -4,53 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlfreDebiTech</title>
-    <link rel="stylesheet" href="home/index.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="home/index-quary.css">
+    <link rel="stylesheet" href="index-quary.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </head>
   <body>
-    <nav>
+
     <div class="top-navbar">
       <p>WELCOME TO OUR SHOP</p>
-      <div class="top-navbar-link">
-          <a href="Login/index.html">Login</a>
-          <a href="registration/registration.html">Register</a> 
+      <div class="icons">
+          <a href="../Login/index.html"><img src="arrow-right-to-bracket-solid (1).svg" alt="" width="18px"> Login</a>
+          <a href="../registration/registration.html"><img src="arrow-right-to-bracket-solid (1).svg" alt="" width="18px"> Register</a> 
       </div>
      </div>
-     <div class="nav-header">
+  
+  
+    <div class="navbar">
       <div class="logo">
-          <span class="alt-color">S</span><span id="span">HOP</span><span class="alt-color">X</span>
+        <span class="alt-color">S</span>HOP<span class="alt-color">X</span>
+        <div class="menu-btn" id="menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <div class="search">
-          <form action="">
-              <input type="text" placeholder="search...">
-          </form>
-      </div>
-      <div class="icons">
-          <a href="#" class="fa fa-heart"></a>
-          <div>
-            <span id="cart-number">0</span>
-          <a href="#" class="fa fa-cart-plus"></a>
+  
+      <div class="nav-content" id="nav-content">
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Categories</a>
+            <ul class="dropdown-content">
+              <li><a href="https://www.apple.com/iphone/">iPhone</a></li>
+              <li><a href="https://www.android.com/intl/en_nz/phones/">Androids</a></li>
+              <li><a href="https://www.apple.com/airpods/">Airpods</a></li>
+              <li><a href="https://ng.oraimo.com/products/power/wall-chargers.html">Chargers</a></li>
+              <li><a href="https://ng.oraimo.com/products/power/power-banks.html">Power Banks</a></li>
+              <li><a href="https://www.etsy.com/market/cell_phone_pouch">Phone Pouch</a></li>
+            </ul>
+          </li>
+          <li><a class="products" href="#phone">Products</a></li>
+          <li><a href="../aboutUs/index.html#contact">Contact Us</a></li>
+        </ul>
+  
+        <div class="search-bar">
+          <input type="text" placeholder="Search for products...">
+          <button type="submit">Search</button>
+        </div>
+  
+        <div class="nav-content1">
+          <div class="cart">
+            <a href="index.html">
+              <span id="cart-number">0</span>
+              <i class='fa-solid fa-cart-shopping fa-lg'  style="color: #ffc00f ;"></i></a>
+            <a href="index.html">Cart</a>
           </div>
-          <i class="	fa fa-refresh" onclick="resetCart()"></i>
-          <a href="#" class="	fa fa-user"></a>
-          <a href="#" class="fa fa-bars"></a>
+          <button class="resetButton" onclick="resetCart()">Reset Cart</button>
+          <div class="user-profile">
+            <a href="index.html">
+              <i class="fa-regular fa-circle-user fa-lg"  style="color: #ffc00f ;"></i></a>
+            <a href="index.html">Profile</a>
+          </div>
+          <div class="help">
+            <a href="../helpCenter/index.html">
+              <i class="fa-regular fa-circle-question fa-lg" style="color: #ffc00f ;"></i></a>
+            <a href="index.html">Help</a>
+          </div>
+        </div>
       </div>
-  </div>
-  <div class="links">
-      <a href="https://www.apple.com/iphone/">Iphone</a>
-      <a href="https://www.samsung.com/us/shop/all-deals/cell-phone-deals/">Samsung</a>
-      <a href="https://ng.infinixmobility.com/">Infinix</a>
-      <a href="https://www.tecno-mobile.com/home/">Tecno</a>
-      <a href="https://www.oppo.com/en/">Oppo</a>
-      <a href="https://consumer.huawei.com/en/phones/">Huawei</a>
-      <a href="https://www.nokia.com/phones/en_us">Nokia</a>
-  </div>
-</nav>
+    </div>
+  
+
+
+
     <!-- main-body -->
     <div class="body-container">
         <div class="body-width">
@@ -62,20 +92,12 @@
           <section id="TopSales" class="grid-phone-deals">
             <div class="grid-header">
               <h5>Top Sales</h5>
-              <h5><a href="see-more/index.html">See More ></a></h5>
+              <h5><a href="#">See More ></a></h5>
             </div>
             <div class="top-sales">
                 <!-- 1 - 6 -->
               <figure>
                 <img src="hero-image/iphone.png" alt="">
-                <figcaption>
-                  Tecno Camon 18P 6.8" FHD...
-                  <br>
-                  <strong>₦ 215,000</strong>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src="images/images (1).jpeg" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -91,7 +113,7 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (4).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -99,7 +121,15 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (2).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
+                <figcaption>
+                  Tecno Camon 18P 6.8" FHD...
+                  <br>
+                  <strong>₦ 215,000</strong>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -116,23 +146,7 @@
             <div class="top-sales">
                 <!-- 1 - 4 -->
               <figure>
-                <img src="images/images (6).jpeg" alt="">
-                <figcaption>
-                  Tecno Camon 18P 6.8" FHD...
-                  <br>
-                  <strong>₦ 215,000</strong>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src="images/images (7).jpeg" alt="">
-                <figcaption>
-                  Tecno Camon 18P 6.8" FHD...
-                  <br>
-                  <strong>₦ 215,000</strong>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src="images/images (5).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -148,7 +162,23 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (9).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
+                <figcaption>
+                  Tecno Camon 18P 6.8" FHD...
+                  <br>
+                  <strong>₦ 215,000</strong>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="hero-image/iphone.png" alt="">
+                <figcaption>
+                  Tecno Camon 18P 6.8" FHD...
+                  <br>
+                  <strong>₦ 215,000</strong>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -165,7 +195,7 @@
             <div class="top-sales">
                 <!-- 1 - 4 -->
               <figure>
-                <img src="images/images (11).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -173,7 +203,7 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (10).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -181,7 +211,7 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (12).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -189,7 +219,7 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (5).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -197,7 +227,7 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (2).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -214,7 +244,7 @@
             <div class="top-sales">
                 <!-- 1 - 4 -->
               <figure>
-                <img src="images/images (11).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -222,7 +252,7 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (4).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -230,7 +260,7 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (9).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -238,7 +268,7 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (1).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -246,7 +276,7 @@
                 </figcaption>
               </figure>
               <figure>
-                <img src="images/images (12).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD...
                   <br>
@@ -276,7 +306,7 @@
               <div class="phone-fig">
                 <!-- 1 - 4 -->
                 <figure id="add-to-cart-page">
-                <img src="images/images (1).jpeg" alt="">
+                <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -287,7 +317,7 @@
                 </button>
               </figure>
               <figure id="add-to-cart-page">
-                <img src="images/images (2).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -298,7 +328,7 @@
                 </button>
               </figure>
               <figure id="add-to-cart-page">
-                <img src="images/images (3).jpeg" alt="">
+                <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -309,7 +339,7 @@
                 </button>
               </figure>
               <figure id="add-to-cart-page">
-                <img src="images/images (4).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -321,7 +351,7 @@
               </figure>
               <!-- 2 - 4 -->
               <figure id="add-to-cart-page">
-                <img src="images/images (5).jpeg" alt="">
+                <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -332,7 +362,7 @@
                 </button>
               </figure>
               <figure id="add-to-cart-page">
-                <img src="images/images (11).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -343,7 +373,7 @@
                 </button>
               </figure>
               <figure id="add-to-cart-page">
-                <img src="images/images (7).jpeg" alt="">
+                <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -354,7 +384,7 @@
                 </button>
               </figure>
               <figure id="add-to-cart-page">
-                <img src="images/images (6).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -366,7 +396,7 @@
               </figure>
               <!-- 3 - 4 -->
               <figure id="add-to-cart-page">
-                <img src="images/images (12).jpeg" alt="">
+                <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -377,7 +407,7 @@
                 </button>
               </figure>
               <figure id="add-to-cart-page">
-                <img src="images/images (5).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -388,7 +418,7 @@
                 </button>
               </figure>
               <figure id="add-to-cart-page">
-                <img src="images/images (9).jpeg" alt="">
+                <img src="hero-image/andriod.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -399,7 +429,7 @@
                 </button>
               </figure>
               <figure id="add-to-cart-page">
-                <img src="images/images (10).jpeg" alt="">
+                <img src="hero-image/iphone.png" alt="">
                 <figcaption>
                   Tecno Camon 18P 6.8" FHD+, 8GB RAM + 128GB ROM-16MP FC,
                   <br>
@@ -584,9 +614,9 @@
                     <ul>
                         <li><a href="aboutUs/index.html">About Us</a></li>
                         <li><a href="terms&condition/index.html">Terms & Conditions</a></li>
-                        <li><a href="terms&condition/index.html">Privacy Policy</a></li>
+                        <li><a href="../terms&condition/index.html">Privacy Policy</a></li>
                         <li><a href="/group2-AlfreDebiTech/helpCenter/index.html">Help Center</a></li>
-                        <li><a href="/group2-AlfreDebiTech/aboutUs/index.html#contact">Contact Us</a></li>
+                        <li><a href="/group2-AlfreDebiTech/aboutUs/index.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -596,7 +626,7 @@
                     <li><a href="">Track Order</a></li>
                     <li><a href="">Returns</a></li>
                     <li><a href="">Shipping</a></li>
-                    <li><a href="aboutUs/index.html#faq-section">FAQs</a></li>
+                    <li><a href="../aboutUs/index.html#faq-section">FAQs</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -625,4 +655,4 @@
   </body>
 </html>
 <script src="https://kit.fontawesome.com/540d675357.js" crossorigin="anonymous"></script>
-<script src="home/index.js"></script>
+<script src="index.js"></script>
