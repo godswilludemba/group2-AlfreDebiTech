@@ -82,15 +82,58 @@
   }
 
 
+  .menu-btn {
+    display: flex;
+  }
+  
+
+  .nav-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: #800080;
+    right: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-content.active {
+    display: flex;
+  }
+
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
   .footer-content{
     width: 80%;
     margin: auto;
+  }
+  .links{
+    width: 30%;
   }
 }
 
 
 
 @media screen and (max-width: 700px) {
+  .links {
+    top: auto;
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
   .body-width{
     max-width:  600px;
    }
@@ -133,7 +176,17 @@
   }
 }
 
-@media screen and (max-width: 590px){
+@media screen and (max-width: 583px){
+  .top-navbar p,.top-navbar-link{
+    font-size: 12px;
+  }
+  .alt-color,
+  #span{
+    font-size: 25px;
+  }
+  .icons .fa,#cart-number {
+    font-size: small;
+  }
   .phone-section{
     width: 100%;
   }
@@ -165,6 +218,15 @@
   .newsletter-form{
     display: flex;
     align-items: center;
+  }
+  .nav-header{
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .links a{
+    font-size: small;
   }
 }
 
@@ -206,7 +268,8 @@
     line-height: 1.8rem;
   }
   .phone-fig figure img{
-    height:7rem;
+    height:6rem;
+    width:7rem ;
   }
   .add-to-cart-button strong{
     font-size: 9px;
@@ -238,6 +301,12 @@
 
 
 @media screen and (max-width: 300px){
+  .top-navbar{
+    margin: 0 0.4rem;
+  }
+  .top-navbar p,.top-navbar-link{
+    font-size: 9px;
+  }
 
   .top-sales img{
     height: 5rem;
@@ -248,20 +317,15 @@
   .top-sales figcaption strong {
     line-height: 20px;
   }
-  .phone-fig{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .phone-fig:nth-child(2){
-    display: none;
-  }
+ 
   .phone-fig figure img{
-    height:10rem;
+    height:5rem;
+    width: 6rem;
   }
-  .chose-variety-menu{
-    display: none;
+  .chose-variety h3,
+  .chose-variety-menu-text a{
+    font-size: small;
   }
-  
   .footer-links a,
   .footer-section a{
     font-size: 10px;
@@ -271,7 +335,7 @@
   }
 }
 
-@media screen and (max-width: 210px){
+@media screen and (max-width: 264px){
   .top-sales{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -287,58 +351,22 @@
   .top-sales figcaption {
     font-size: 9px;
   }
- 
+  .phone-fig{
+    display: grid;
+    grid-template-columns: 1fr;
+  } 
+   .phone-fig:nth-child(2){
+    display: none;
+  }
+  .phone-fig figure {
+    display: flex;
+    align-items: center;
+  }
+  .chose-variety h3,
+  .chose-variety-menu-text a{
+    font-size: 10px;
+  }
   .phone-fig figure img{
-    height:8rem;
+    height: 6rem;
   }
-}
-
-
-
-
-
-
-
-@media only screen and (max-width:1114px){
-  .alt-color{
-      font-size: 30px;
-  }
-  span{
-      font-size: 30px;
-  }
-  .icons a {
-      margin-right: 19px; 
-  }
-  
-}
-@media only screen and (max-width:600px){
-  .alt-color{
-      font-size: 20px;
-  }
-  span{
-      font-size: 20px;
-  }
-  .search{
-      width: 6rem;
-  }
-  .icons a {
-      margin-right: 20px; 
-  }
-  
-  .icons .fa{
-    font-size: 10px;
-  }
-  #cart-number{
-    font-size: 10px;
-  }
-}
-@media only screen and (max-width:400px){
-
-  .icons a {
-    margin-right:7px; 
-}
-.icons i {
-  margin-right:7px; 
-}
- 
 }
