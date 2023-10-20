@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
-  font-family: 'Merriweather', serif;
+  font-family: m;
 }
 
 html body {
@@ -13,7 +12,6 @@ html body {
 a{
   text-decoration: none;
 }
-<<<<<<< HEAD
 ul,li{
   list-style: none;
 }
@@ -60,39 +58,16 @@ ul,li{
   align-items: center;
   text-align: center;
   position: relative;
-=======
-.icons i{
-  cursor: pointer;
-  margin-right: 1rem;
-}
-
-.nav-header{
-
-  background-color: #800080;
-  display:flex;
-  justify-content: space-between;
-  padding: 0px 1rem; 
-  height: 80px;
-  align-items: center;
-  text-align: center;
->>>>>>> 2d7a95a1f4727eda3b3dc568f72dd472b18503a5
 }
 .alt-color{
   color: #ffc000;
   font-size: 40px;
 }
-<<<<<<< HEAD
 #span{
   color: #ffff;
   font-size: 40px;
 }
 
-=======
-span{
-  color: #ffff;
-  font-size: 40px;
-}
->>>>>>> 2d7a95a1f4727eda3b3dc568f72dd472b18503a5
 .search input{
   height: 35px;
   width: 100%;
@@ -103,22 +78,12 @@ span{
   font-size: 16px;
 }
 
-<<<<<<< HEAD
 
-=======
-.icons a {
-  margin-right: 1rem; 
-}
->>>>>>> 2d7a95a1f4727eda3b3dc568f72dd472b18503a5
 
 .icons .fa{
   color: white;
   text-decoration: none;
   font-size: 22px;
-<<<<<<< HEAD
-=======
-  padding-right: 0px , 10px;
->>>>>>> 2d7a95a1f4727eda3b3dc568f72dd472b18503a5
   transition: 0.6s;
 }
 .fa:hover{
@@ -128,7 +93,6 @@ span{
   background-color: #800080;
   display: none;
   position: absolute; 
-<<<<<<< HEAD
   width: 20%;
   right: 0;
   z-index: 1; 
@@ -137,14 +101,6 @@ span{
 .links a:hover{
   color: #ffc000;
 }
-=======
-  top: 80px; 
-  left: 0;
-  width: 100%;
-  z-index: 1; 
-  transition: 0.6s;
-}
->>>>>>> 2d7a95a1f4727eda3b3dc568f72dd472b18503a5
 .links a{
   color: white;
   text-decoration: none;
@@ -157,7 +113,6 @@ span{
   display: block;
 }
 #cart-number{
-<<<<<<< HEAD
   font-size: 23px;
   color: white;
 }
@@ -166,12 +121,6 @@ span{
   display: flex;
   justify-content: space-between;
 }
-=======
-  font-size: 20px;
-}
-
-
->>>>>>> 2d7a95a1f4727eda3b3dc568f72dd472b18503a5
 
 .body-container{
   padding-top: 2rem;
