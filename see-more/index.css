@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: m;
+}
+
+html body {
+  font-size: 62.5%;
+}
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+.body{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.top-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 0 1rem;
+}
+.top-navbar p{
+  font-size: 15px;
+}
+.top-navbar .icons{
+  font-size: 15px;
+}
+.top-navbar a{
+  text-decoration: none;
+  color: black;
+}
+
+.top-navbar a:hover{
+  color: black;
+}
+.top-navbar-link{
+  font-size: 15px;
+  display: flex;
+  gap: 1rem;
+}
+.top-navbar-link a:hover{
+  color: #ffc000;
+}
+
+.icons i{
+  cursor: pointer;
+}
+
+.nav-header{
+  background-color: #800080;
+  display:flex;
+  justify-content: space-between;
+  padding: 0px 10px; 
+  height: 80px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.alt-color{
+  color: #ffc000;
+  font-size: 40px;
+}
+#span{
+  color: #ffff;
+  font-size: 40px;
+}
+
+.search input{
+  height: 35px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+
+.icons .fa{
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.6s;
+}
+.fa:hover{
+  color: #ffc000 ;
+}
+.links{
+  background-color: #800080;
+  display: none;
+  position: absolute; 
+  width: 15%;
+  right: 0;
+  z-index: 1; 
+  transition: 0.6s;
+}
+.links a:hover{
+  color: #ffc000;
+}
+.links a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+}
+.showmylinks{
+  height: auto;
+  display: block;
+}
+#cart-number{
+  font-size: 23px;
+  color: white;
+}
+.icons{
+  gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-header{
+  margin-top: 1rem;
+  background-color: #800080;
+  width: 100%;
+  padding:1rem ;
+}
+h5{
+  font-size: large;
+  color: #fff;
+
+}
+
+.phone-fig {
+  width: 90%;
+  margin: auto;
+}
+
+.child-div {
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.phone-fig figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(25% - 1rem);
+  padding: 1rem 0;
+}
+
+.phone-fig figure img {
+  height: 8rem;
+  width: 9rem;
+  object-fit: cover;
+}
+
+.phone-fig figure figcaption {
+  padding: 0.5rem 0 0;
+  line-height: 1rem;
+  font-size: 10px;
+  text-align: center;
+}
+
+.phone-fig figure figcaption strong {
+  line-height: 2rem;
+  font-size: 15px;
+}
+
+.add-to-cart-button {
+  opacity: 0;
+  padding:0.7rem 1rem;
+  background-color: #800080;
+  border-radius: 10px;
+  border: none;
+}
+
+.phone-fig figure:hover {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.phone-fig figure:hover .add-to-cart-button {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer-content ul li{
+  margin-top: 1rem;
+}
+.footer-section {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.footer-logo {
+  font-size: 20px;
+}
+
+.footer-links ul,
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-links li,
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-section a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover,
+.footer-section a:hover {
+  color: #ffcc00;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  background-color: #ffcc00;
+  color: #1e1e1e;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.newsletter-form button:hover {
+  background-color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+.alt-color{
+  color: #ffc000;
+}
+h3{
+  color: #ffc000;
+}
